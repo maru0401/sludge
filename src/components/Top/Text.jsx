@@ -4,8 +4,8 @@ import { Typography } from '@mui/material';
 const Text = () => {
   return (
       <Typography
-        variant="h4"
-        component="h2"
+        variant='h4'
+        component='h2'
         sx={{
           position: 'absolute',
           top: '50%',

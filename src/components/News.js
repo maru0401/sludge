@@ -2,9 +2,9 @@ import Content from './News/Content';
 import BackColor from './News/BackColor';
 import Picture from '../assets/imgs/Top/image.webp';
 import { Box } from '@mui/material';
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 import Text from './News/Text';
 import MoreText from './News/MoreText';
 
@@ -29,14 +29,14 @@ const settings = {
       breakpoint: 600,
       settings: {
         slidesToShow: 1,
-        slidesToScroll:1,
+        slidesToScroll: 1,
       },
     },
     {
       breakpoint: 380,
       settings: {
         slidesToShow: 1,
-        slidesToScroll:1,
+        slidesToScroll: 1,
         centerMode: false
       },
     },
@@ -46,24 +46,26 @@ const settings = {
 
 function News() {
   return (
-    <Box position="relative">
-      <Text />
-      <Box sx={{ margin: '30px' }}>
-        <Slider {...settings}>
-          <Content info={{ webp: Picture, title: "令和4年度最終報告結果" }} />
-          <Content info={{ webp: Picture, title: "活性汚泥とは?" }} />
-          <Content info={{ webp: Picture, title: "活性汚泥とは?" }} />
-          <Content info={{ webp: Picture, title: "活性汚泥とは?" }} />
-          <Content info={{ webp: Picture, title: "活性汚泥とは?" }} />
-          <Content info={{ webp: Picture, title: "活性汚泥とは?" }} />
-          <Content info={{ webp: Picture, title: "活性汚泥とは?" }} />
-          <Content info={{ webp: Picture, title: "活性汚泥とは?" }} />
-          <Content info={{ webp: Picture, title: "活性汚泥とは?" }} />
-        </Slider>
+    <div id='news'>
+      <Box position='relative'>
+        <Text />
+        <Box sx={{ margin: '30px' }}>
+          <Slider {...settings}>
+            <Content info={{ webp: Picture, title: '令和4年度最終報告結果' }} />
+            <Content info={{ webp: Picture, title: '令和3年度最終報告結果' }} />
+            <Content info={{ webp: Picture, title: '令和2年度最終報告結果' }} />
+            <Content info={{ webp: Picture, title: '令和元年度最終報告結果' }} />
+            <Content info={{ webp: Picture, title: '平成31年度最終報告結果' }} />
+            <Content info={{ webp: Picture, title: '平成30年度最終報告結果' }} />
+            <Content info={{ webp: Picture, title: '平成29年度最終報告結果' }} />
+            <Content info={{ webp: Picture, title: '平成28年度最終報告結果' }} />
+            <Content info={{ webp: Picture, title: '平成27年度最終報告結果' }} />
+          </Slider>
+        </Box>
+        <MoreText />
+        <BackColor />
       </Box>
-      <MoreText />
-      <BackColor />
-    </Box>
+    </div>
   );
 }
 

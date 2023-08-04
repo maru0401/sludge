@@ -5,7 +5,7 @@ import { Box } from '@mui/material';
 function Top() {
   return (
     <div>
-      <Box position="relative">
+      <Box position='relative'>
         <Image />
         <Text />
       </Box>

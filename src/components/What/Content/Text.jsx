@@ -5,10 +5,10 @@ const Text = props => {
   return (
     <Box
       sx={{ top: '0', padding: '25px' }}>
-      <Typography fontSize="50px" sx={{ maxWidth: '500px' }}>
+      <Typography fontSize='50px' sx={{ maxWidth: '500px' }}>
         {props.text.title}
       </Typography>
-      <Typography fontSize="20px" sx={{ maxWidth: '500px' }}>
+      <Typography fontSize='20px' sx={{ maxWidth: '500px' }}>
         {props.text.content}
       </Typography>
     </Box>

@@ -3,8 +3,8 @@ import { Button } from '@mui/material';
 const RoundedButton = () => {
   return (
     <Button
-      variant="contained"
-      size="large"
+      variant='contained'
+      size='large'
       sx={{
         position: 'absolute', // 要素の位置を絶対位置にする
         borderRadius: '50px',

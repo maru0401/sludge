@@ -7,7 +7,7 @@ const Text = () => {
       transform: 'translate(-50%, -50%)', position: 'absolute', top: '45%'
     }}>
       <Typography
-        variant="h2"
+        variant='h2'
         sx={{
 
           textAlign: 'center',
@@ -19,7 +19,7 @@ const Text = () => {
         MISSION
       </Typography>
       <Typography
-        variant="h3"
+        variant='h3'
         sx={{
           marginTop: '30px',
           textAlign: 'center',

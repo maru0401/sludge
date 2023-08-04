@@ -2,7 +2,7 @@ import { Typography } from '@mui/material';
 
 const MoreText = () => {
   return (
-    <a href="./">
+    <a href='./'>
       <Typography
         sx={{
           fontSize: '20px',

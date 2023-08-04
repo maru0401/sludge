@@ -3,7 +3,7 @@ import { Typography } from '@mui/material';
 const Text = () => {
   return (
       <Typography
-        variant="h4"
+        variant='h4'
         sx={{
           marginTop: '4rem',
           fontSize: '7rem',

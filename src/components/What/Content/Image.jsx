@@ -4,10 +4,10 @@ import { CardMedia } from '@mui/material';
 const ImageWithText = props => {
   return (
       <CardMedia
-        component="img"
+        component='img'
         image={props.webp}
         draggable={false}
-        alt="picture"
+        alt='picture'
         sx={{
           height: '300px',
           width: '300px',
