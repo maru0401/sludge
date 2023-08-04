@@ -9,6 +9,7 @@ const Media = () => {
       <CardMedia
         component='img'
         src={Twitter}
+        draggable={false}
         alt='Twitter'
         sx={{
           height: '40px',
@@ -19,6 +20,7 @@ const Media = () => {
       <CardMedia
         component='img'
         src={Instagram}
+        draggable={false}
         alt='Instagram'
         sx={{
           height: '40px',
@@ -29,6 +31,7 @@ const Media = () => {
       <CardMedia
         component='img'
         src={School}
+        draggable={false}
         alt='School'
         sx={{
           height: '40px',

@@ -12,7 +12,6 @@ const settings = {
   infinite: true,
   speed: 500,
   slidesToShow: 4,
-  slidesToScroll: 2,
   responsive: [
     {
       breakpoint: 1200,

@@ -6,6 +6,7 @@ const ImageWithText = props => {
       <CardMedia
         component="img"
         image={props.webp}
+        draggable={false}
         alt="picture"
         sx={{
           height: '300px',

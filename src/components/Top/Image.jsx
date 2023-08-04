@@ -7,6 +7,7 @@ const Image = () => {
         component='img'
         image={Webp}
         alt='pot'
+        draggable={false}
         sx={{ height: '100vh', backgroundSize: 'cover' }}
       />
   );
