@@ -27,7 +27,7 @@ const Header = () => {
       <AppBar>
         <Toolbar>
           {pages.map(page => (
-            <AnchorLink href={page.link} offset='50'>
+            <AnchorLink key={page.link} href={page.link} offset='50'>
               <Button
                 key={page.name}
                 sx={{
@@ -36,7 +36,7 @@ const Header = () => {
                   marginLeft: 3
                 }}
               >
-                {page.link}
+                {page.name}
               </Button>
             </AnchorLink>
           ))}
