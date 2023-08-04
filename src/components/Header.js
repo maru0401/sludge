@@ -27,7 +27,7 @@ const Header = () => {
       <AppBar>
         <Toolbar>
           {pages.map(page => (
-            <AnchorLink key={page.link} href={page.link} offset='50'>
+            <AnchorLink key={page.link} href={page.link} offset='20' style={{ textDecoration: 'none' }}>
               <Button
                 key={page.name}
                 sx={{
