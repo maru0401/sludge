@@ -1,7 +1,7 @@
 import React from 'react';
-import Instagram from '../../assets/imgs/Media/Instagram.webp';
-import Twitter from '../../assets/imgs/Media/Twitter.webp';
-import School from '../../assets/imgs/Media/School.webp';
+import Instagram from '../../assets/imgs/Footer/Instagram.webp';
+import Twitter from '../../assets/imgs/Footer/Twitter.webp';
+import School from '../../assets/imgs/Footer/School.webp';
 import { Box, CardMedia } from '@mui/material';
 
 const Media = () => {

@@ -9,10 +9,10 @@ const Text = () => {
       <Typography
         variant='h2'
         sx={{
-
+          fontFamily: 'Koulen',
           textAlign: 'center',
           color: '#fff',
-          fontSize: '4rem',
+          fontSize: '6rem',
           textShadow: '2px 2px 4px rgba(0, 0, 0, 1)',
         }}
       >

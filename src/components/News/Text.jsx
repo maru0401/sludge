@@ -5,7 +5,7 @@ const Text = () => {
       <Typography
         variant='h4'
         sx={{
-          fontSize: '7rem',
+          fontSize: '6rem',
           fontFamily: 'Koulen',
           textAlign: 'center'
         }}

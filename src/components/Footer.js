@@ -4,7 +4,7 @@ import CopyRight from './Footer/CopyRight';
 import Media from './Footer/Media';
 function Footer() {
   return (
-    <Box sx={{ marginTop: 5.4 }}>
+    <Box sx={{ marginTop: 8 }}>
       <BackColor />
       <CopyRight />
       <Media />
