@@ -18,7 +18,7 @@ const Text = () => {
           lineHeight: '80px',
         }}
       >
-        未来の<br/>しぜんを<br/>創る。
+        今を守り、<br/>未来を創る
       </Typography>
   );
 }
