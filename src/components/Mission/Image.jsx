@@ -8,7 +8,7 @@ const Image = () => {
         position: 'relative',
         height: '900px', // デフォルトの高さ
         backgroundImage: `url(${Webp})`,
-        filter: 'blur(8px)',
+        filter: 'blur(3px)',
         
         '@media (max-width: 600px)': {
           height: '600px', // 画面幅が 600px 以下の場合の高さ
