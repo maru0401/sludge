@@ -1,4 +1,4 @@
-import Webp from '../../assets/imgs/Mission/test5.jpg';
+import Webp from '../../assets/imgs/Mission/mission.JPG';
 import { CardMedia } from '@mui/material';
 
 const Image = () => {
