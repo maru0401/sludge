@@ -1,6 +1,6 @@
 import { Typography } from '@mui/material';
 
-const CopyRight = () => {
+const CopyRight = ({Text}) => {
   return (
     <Typography
       sx={{
@@ -10,7 +10,7 @@ const CopyRight = () => {
         marginLeft: '70px'
       }}
     >
-      ©SARANOU Activated SLUDGE
+      {Text}
     </Typography>
   );
 }

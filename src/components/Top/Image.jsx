@@ -1,15 +1,14 @@
-import Webp from '../../assets/imgs/Top/image.webp';
 import { CardMedia } from '@mui/material';
 
-const Image = () => {
+const Image = ({ Webp }) => {
   return (
-      <CardMedia
-        component='img'
-        image={Webp}
-        alt='pot'
-        draggable={false}
-        sx={{ height: '100vh', backgroundSize: 'cover' }}
-      />
+    <CardMedia
+      component='img'
+      image={Webp}
+      alt='pot'
+      draggable={false}
+      sx={{ height: '100vh', backgroundSize: 'cover' }}
+    />
   );
 }
 

@@ -1,6 +1,6 @@
 import { Typography } from '@mui/material';
 
-const Title = props => {
+const Title = ({title}) => {
   return (
     <Typography
       sx={{
@@ -11,7 +11,7 @@ const Title = props => {
         padding: '10px'
       }}
     >
-      {props.title}
+      {title}
     </Typography>
   );
 };

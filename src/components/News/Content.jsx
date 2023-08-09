@@ -2,6 +2,7 @@ import { Box } from '@mui/material';
 import Image from './Content/Image';
 import RoundedButton from './Content/RoundedButton';
 import Title from './Content/Title';
+import Date from './Content/Date';
 
 const Content = props => {
   return (
@@ -19,8 +20,9 @@ const Content = props => {
       }}
     >
       <Image webp={props.info.webp} />
+      <Date date={props.info.date}/>
       <Title title={props.info.title} />
-      <RoundedButton />
+      <RoundedButton id={props.info.id}/>
     </Box>
   );
 }

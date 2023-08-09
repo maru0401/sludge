@@ -5,15 +5,14 @@ import Mission from '../components/Mission';
 import News from '../components/News';
 import Footer from '../components/Footer';
 function Master() {
-  return (
-    <div>
-      <Header />
-      <Top />
-      <What />
-      <Mission />
-      <News />
-      <Footer/>
-    </div>
+  return (<div>
+    <Header />
+    <Top />
+    <What />
+    <Mission />
+    <News />
+    <Footer />
+  </div>
   );
 }
 

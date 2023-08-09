@@ -1,12 +1,12 @@
 import { Box } from '@mui/material';
 
-const Image = props => {
+const Image = ({ webp }) => {
   return (
     <Box
       sx={{
         width: '300px',
         height: '160px',
-        backgroundImage: `url(${props.webp})`,
+        backgroundImage: `url(${webp})`,
         backgroundSize: '200px 150px',
         backgroundRepeat: 'no-repeat'
       }}

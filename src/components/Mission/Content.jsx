@@ -1,20 +1,23 @@
 import { Typography } from '@mui/material';
 
-const Text = () => {
+const Content = ({content}) => {
   return (
     <Typography
-      variant='h2'
+      variant='h3'
       sx={{
-        fontFamily: 'Koulen',
+        marginTop: '30px',
         textAlign: 'center',
         color: '#fff',
-        fontSize: '6rem',
+        fontSize: '30px',
         textShadow: '2px 2px 4px rgba(0, 0, 0, 1)',
+        '@media (max-width: 600px)': {
+          fontSize: '20px',
+        },
       }}
     >
-      MISSION
+     {content}
     </Typography>
   );
 };
 
-export default Text;
+export default Content;
