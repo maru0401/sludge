@@ -3,21 +3,7 @@ import Text from './Mission/Text';
 import Content from './Mission/Content';
 import { Box } from '@mui/material';
 import FadeIn from './FadeIn';
-import { useState, useEffect } from 'react';
-import axios from '../assets/js/request';
-import loading from '../assets/imgs/Load/loading.webp';
-
-function Mission() {
-  const [MissionImage, setMissionImage] = useState(loading);
-  const [MissionContent, setMissionContent] = useState();
-
-  useEffect(() => {
-    (async () => {
-      const { data } = await axios.get('Mission?populate=*');
-      setMissionImage(`https://admin.activated-sludge.xyz${data.data.attributes.Image.data.attributes.url}`);
-      setMissionContent(data.data.attributes.Content)
-    })();
-  }, []);
+function Mission({ MissionContent, MissionImage }) {
   return (
     <div id='mission'>
       <Box position='relative' sx={{

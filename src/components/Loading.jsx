@@ -1,4 +1,3 @@
-import React from 'react';
 import { Box, CardMedia } from '@mui/material';
 import Cat from '../assets/imgs/Load/cat.gif';
 const Loading = () => {

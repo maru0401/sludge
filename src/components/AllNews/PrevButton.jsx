@@ -2,12 +2,12 @@ import React from 'react';
 import { Button } from '@mui/material';
 import { Link } from 'react-router-dom';
 
-const NextButton = ({ id }) => {
+const PrevButton = ({ id }) => {
   return (
     <Button
       variant='contained'
       component={Link}
-      to={`/news?id=${id + 10}`}
+      to={`?id=${id - 10}`}
       sx={{
         borderRadius: '50px',
         width: '140px',
@@ -29,9 +29,9 @@ const NextButton = ({ id }) => {
         textAlign: 'center'
       }}
     >
-      Next
+      PREV
     </Button>
   );
 };
 
-export default NextButton;
+export default PrevButton;
