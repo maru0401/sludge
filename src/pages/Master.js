@@ -12,6 +12,7 @@ import NewsContent from '../components/News/Content';
 import FadeIn from '../components/FadeIn';
 import Loading from '../components/Loading';
 
+const BaseUrl = 'https://admin.activated-sludge.xyz';
 function formatDate(date) {
   const year = date.getFullYear();
   const month = (date.getMonth() + 1).toString().padStart(2, '0');
@@ -55,7 +56,7 @@ function Master() {
         const whatData = whatResponse.data;
         const whatContent = whatData.data.map(con => (
           <FadeIn key={con.id}>
-            <WhatContent info={{ webp: `https://admin.activated-sludge.xyz${con.attributes.Image.data.attributes.url}`, title: con.attributes.Title, content: con.attributes.Description }} />
+            <WhatContent info={{ webp: `${BaseUrl}${con.attributes.Image.data.attributes.url}`, title: con.attributes.Title, content: con.attributes.Description }} />
           </FadeIn>
         ));
 
@@ -64,10 +65,10 @@ function Master() {
 
         const newsData = newsResponse.data;
         const newsContent = newsData.data.map(con => (
-          <NewsContent key={con.id} info={{ webp: `https://admin.activated-sludge.xyz${con.attributes.Image.data.attributes.url}`, title: con.attributes.Title, date: formatDate(new Date(con.attributes.createdAt)), id: con.id }} />
+          <NewsContent key={con.id} info={{ webp: `${BaseUrl}${con.attributes.Image.data.attributes.url}`, title: con.attributes.Title, date: formatDate(new Date(con.attributes.createdAt)), id: con.id }} />
         ));
-        setSloganImage(`https://admin.activated-sludge.xyz${sloganData.data.attributes.Image.data.attributes.url}`);
-        setMissionImage(`https://admin.activated-sludge.xyz${missionData.data.attributes.Image.data.attributes.url}`);
+        setSloganImage(`${BaseUrl}${sloganData.data.attributes.Image.data.attributes.url}`);
+        setMissionImage(`${BaseUrl}${missionData.data.attributes.Image.data.attributes.url}`);
         setSlogan(FormatText);
         setWhatContents(whatContent);
         setMissionContent(missionContent);
@@ -80,13 +81,7 @@ function Master() {
     fetchData();
   }, []);
 
-  if (loading) {
-    return (
-      <div>
-        <Loading />
-      </div>
-    );
-  }
+  if (loading) return (<Loading />);
 
   return (
     <div>
