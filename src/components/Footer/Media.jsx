@@ -7,7 +7,7 @@ import { Box, CardMedia } from '@mui/material';
 const Media = () => {
   return (
     <Box sx={{ position: 'relative', display: 'flex', alignItems: 'center', marginLeft: '65px' }}>
-      <a href='https://twitter.com/sludgeactivated' target='_blank' rel='noopener noreferrer'>
+      <a href='https://twitter.com/sarano_official' target='_blank' rel='noopener noreferrer'>
         <CardMedia
           component='img'
           src={Twitter}

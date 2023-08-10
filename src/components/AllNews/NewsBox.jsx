@@ -7,6 +7,7 @@ const NewsBox = ({ title, date, imageUrl, content, id }) => {
     <Card sx={{ display: 'flex', marginBottom: '20px' }}>
       <CardMedia
         component="img"
+        draggable={false}
         sx={{ width: 150, height: 178, objectFit: 'cover' }}
         image={imageUrl}
         alt={title}
@@ -27,7 +28,7 @@ const NewsBox = ({ title, date, imageUrl, content, id }) => {
         <Button
           variant='contained'
           component={Link}
-          to={`/news?id=${id}`}
+          to={`/detail?id=${id}`}
           sx={{
             borderRadius: '50px',
             width: '140px',

@@ -2,20 +2,17 @@ import React from 'react';
 import { Button } from '@mui/material';
 import { Link } from 'react-router-dom';
 
-const RoundedButton = ({ id }) => {
+const BackButton = ({ text,to }) => {
   return (
-    <Link to={`detail?id=${id}`}>
+    <Link to={to}>
       <Button
         variant='contained'
-        size='large'
         sx={{
-          position: 'absolute', // 要素の位置を絶対位置にする
           borderRadius: '50px',
-          top: '245px',
           marginLeft: '15px',
-          width: '170px',
-          height: '40px',
-          fontSize: '1.2rem',
+          width: '150px',
+          height: '30px',
+          fontSize: '15px',
           backgroundColor: '#F0F0F0', // ボタンの背景色を設定
           border: '1px solid #000000', // ボーダーの設定
           color: '#000000', // 文字の色を黒に設定
@@ -24,10 +21,10 @@ const RoundedButton = ({ id }) => {
           },
         }}
       >
-        詳しく見る→
+        {text}
       </Button>
     </Link>
   );
 };
 
-export default RoundedButton;
+export default BackButton;

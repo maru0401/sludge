@@ -1,22 +1,22 @@
-import React, { Suspense } from 'react';
+
 import ReactDOM from 'react-dom/client';
-import Loading from './components/Loading';
 import './assets/style/Global.css';
 import { Routes, Route, BrowserRouter } from 'react-router-dom';
-const Master = React.lazy(() => import('./pages/Master'));
-const News = React.lazy(() => import('./pages/News'));
-
+import Master from './pages/Master';
+import AllNews from './pages/AllNews';
+import Detail from './pages/Detail';
 function App() {
     return (
         <BrowserRouter>
             <Routes>
                 <Route path="/" element={
-                        <Master />
+                    <Master />
                 } />
                 <Route path="/news" element={
-                    <Suspense fallback={<Loading />}>
-                        <News />
-                    </Suspense>
+                    <AllNews />
+                } />
+                <Route path="/detail" element={
+                    <Detail />
                 } />
             </Routes>
         </BrowserRouter>

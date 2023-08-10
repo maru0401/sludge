@@ -3,6 +3,7 @@ import axios from '../assets/js/request';
 import { useLocation } from 'react-router-dom';
 import AllNews from '../components/AllNews';
 import Loading from '../components/Loading';
+import BackButton from '../components/AllNews/BackButton';
 
 const BaseUrl = 'https://admin.activated-sludge.xyz';
 
@@ -22,7 +23,7 @@ function News() {
   useEffect(() => {
     async function fetchData() {
       try {
-        const { data } = await axios.get(`newss?sort[0]=createdAt:desc&pagination[limit]=10&populate=*&pagination[start]=${Number(query.get('id')) || 0}`);
+        const { data } = await axios.get(`newss?sort[0]=createdAt:desc&pagination[limit]=10&populate=*&pagination[start]=${Number(query.get('id')) || 1}`);
         const formattedNews = data.data.map(con => ({
           imageUrl: `${BaseUrl}${con.attributes.Image.data.attributes.url}`,
           title: con.attributes.Title,
@@ -37,8 +38,7 @@ function News() {
         console.error('Error fetching data:', error);
         setLoading(false);
       }
-    }
-
+    };
     fetchData();
   }, [query]);
 
@@ -47,6 +47,7 @@ function News() {
   return (
     <div>
       <AllNews News={news} />
+      <BackButton/>
     </div>
   );
 }

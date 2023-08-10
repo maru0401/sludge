@@ -7,7 +7,6 @@ import NextButton from './AllNews/NextButton';
 import PrevButton from './AllNews/PrevButton';
 
 const NewsContainer = ({ News }) => {
-
   return (
     <>
       <FadeIn>
@@ -21,7 +20,8 @@ const NewsContainer = ({ News }) => {
                 title={news.title}
                 date={news.date}
                 imageUrl={news.imageUrl}
-                content={news.content}
+                content={news.content.slice(0, 40)}
+                id={news.id}
               />
             </Grid>
           ))}
