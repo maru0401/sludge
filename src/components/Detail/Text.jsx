@@ -6,7 +6,7 @@ const Text = ({ text }) => {
     <Box sx={{
       margin:'20px'
     }}>
-      <ReactMarkdown escapeHtml={false} source={text} />
+      <ReactMarkdown renderers={{ code: CodeBlock }} children={text}  />
     </Box>
   );
 }
