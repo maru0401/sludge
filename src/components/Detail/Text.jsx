@@ -7,7 +7,7 @@ const Text = ({ text }) => {
     <Box sx={{
       margin: '20px'
     }}>
-      <ReactMarkdown children={text.replace('](/uploads/', '](https://admin.activated-sludge.xyz/uploads/')} rehypePlugins={[rehypeRaw]} linkTarget="_blank" />
+      <ReactMarkdown children={text?.replace('](/uploads/', '](https://admin.activated-sludge.xyz/uploads/')} rehypePlugins={[rehypeRaw]} linkTarget="_blank" />
     </Box>
   );
 }
