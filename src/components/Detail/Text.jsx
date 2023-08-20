@@ -7,6 +7,7 @@ const Text = ({ text }) => {
     <Box sx={{
       margin: '20px'
     }}>
+      <img src="https://admin.activated-sludge.xyz/uploads/_29f1a2108f.jpg" alt="ロビー写真.jpg"></img>
       <ReactMarkdown children={text?.replace('](/uploads/', '](https://admin.activated-sludge.xyz/uploads/')} rehypePlugins={[rehypeRaw]} linkTarget="_blank" />
     </Box>
   );

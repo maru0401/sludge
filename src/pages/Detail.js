@@ -49,6 +49,7 @@ const CenteredPaper = () => {
     width: isMobile ? '70%' : '100%',
     margin: '0 auto',
     padding: '16px',
+    overflow: 'hidden',
   };
 
   return (
