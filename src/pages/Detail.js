@@ -46,7 +46,7 @@ const CenteredPaper = () => {
   const centerPaperStyle = {
     display: 'flex',
     flexDirection: 'column',
-    width: isMobile ? '70%' : '100%',
+    width: isMobile ? '70%' : '90%',
     margin: '0 auto',
     padding: '16px',
     overflow: 'hidden',
