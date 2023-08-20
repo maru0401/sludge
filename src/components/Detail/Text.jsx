@@ -6,7 +6,7 @@ const Text = ({ text }) => {
     <Box sx={{
       margin:'20px'
     }}>
-      <ReactMarkdown>{text}</ReactMarkdown>
+      <ReactMarkdown allowDangerousHtml={true}>{text}</ReactMarkdown>
     </Box>
   );
 }
