@@ -10,7 +10,7 @@ const MoreText = () => {
           marginTop:'3rem'
         }}
       >
-        すべて見る
+        and more...
       </Typography>
       </a>
   );

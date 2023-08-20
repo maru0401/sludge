@@ -8,10 +8,12 @@ const BackButton = () => {
       display: 'flex',
       justifyContent: 'center',
     }}>
-      <Link to={'../'}>
         <Button
           variant='contained'
+          component={Link}
+          to={`../`}
           sx={{
+            marginBottom:'10%',
             borderRadius: '50px',
             width: '100px',
             height: '30px',
@@ -26,7 +28,6 @@ const BackButton = () => {
         >
           ホームへ
         </Button>
-      </Link>
     </Box>
   );
 };

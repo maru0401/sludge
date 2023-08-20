@@ -4,7 +4,7 @@ const Date = ({ date }) => {
   return (
     <Typography
       sx={{
-        margin: '20px',
+        margin: '10px',
         color: 'gray',
         fontSize: '12px'
       }}

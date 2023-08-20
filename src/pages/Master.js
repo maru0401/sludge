@@ -62,8 +62,8 @@ function Master() {
 
         const missionData = missionResponse.data;
         const missionContent = missionData.data.attributes.Content;
-
         const newsData = newsResponse.data;
+
         const newsContent = newsData.data.map(con => (
           <NewsContent key={con.id} info={{ webp: `${BaseUrl}${con.attributes.Image.data.attributes.url}`, title: con.attributes.Title, date: formatDate(new Date(con.attributes.createdAt)), id: con.id }} />
         ));
