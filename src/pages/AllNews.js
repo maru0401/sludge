@@ -23,7 +23,7 @@ function News() {
   useEffect(() => {
     async function fetchData() {
       try {
-        const { data } = await axios.get(`newss?sort[0]=createdAt:desc&pagination[limit]=10&populate=*&pagination[start]=${Number(query.get('id')) || 1}`);
+        const { data } = await axios.get(`newss?sort[0]=createdAt:desc&pagination[limit]=10&populate=*&pagination[start]=${Number(query.get('id')) || 0}`);
         const formattedNews = data.data.map(con => ({
           imageUrl: `${BaseUrl}${con.attributes.Image.data.attributes.url}`,
           title: con.attributes.Title,
