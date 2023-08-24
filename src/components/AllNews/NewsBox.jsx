@@ -8,7 +8,7 @@ const NewsBox = ({ title, date, imageUrl, content, id }) => {
       <CardMedia
         component="img"
         draggable={false}
-        sx={{ width: 150, height: 178, objectFit: 'cover' }}
+        sx={{ width: 150, maxHeight: 2000, objectFit: 'cover' }}
         image={imageUrl}
         alt={title}
       />
