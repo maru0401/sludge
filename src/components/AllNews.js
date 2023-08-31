@@ -28,7 +28,7 @@ const NewsContainer = ({ News }) => {
         </Grid>
       </Container>
       <Grid container justifyContent="center" style={{ marginTop: '50px', marginBottom: '20px' }}>
-        <PrevButton id={News[0]?.id} />
+        <PrevButton id={News[0]?.length} />
         <NextButton id={News[News.length - 1]?.id} size={News.length} />
       </Grid>
     </>
