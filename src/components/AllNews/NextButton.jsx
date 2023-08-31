@@ -2,10 +2,10 @@ import React from 'react';
 import { Button } from '@mui/material';
 import { Link } from 'react-router-dom';
 
-const NextButton = ({ id, size }) => {
+const NextButton = ({ id }) => {
   return (
     <>
-      {size === 10 && <Button
+      {id === 10 && <Button
         variant='contained'
         component={Link}
         to={`/news?id=${id + 10}`}
