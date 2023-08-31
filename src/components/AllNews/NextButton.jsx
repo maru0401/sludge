@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const NextButton = ({ id }) => {
   return (
     <>
-      {id === 10 && <Button
+      {id === 9 && <Button
         variant='contained'
         component={Link}
         to={`/news?id=${id + 10}`}
