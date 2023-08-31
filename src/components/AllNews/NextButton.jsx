@@ -3,6 +3,7 @@ import { Button } from '@mui/material';
 import { Link } from 'react-router-dom';
 
 const NextButton = ({ id }) => {
+  console.log(id)
   return (
     <>
       {id === 9 && <Button
