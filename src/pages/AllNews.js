@@ -46,8 +46,8 @@ function News() {
 
   return (
     <div>
-      <AllNews News={news} />
-      <BackButton/>
+      <AllNews News={news} Now={Number(query.get('id')) || 0} />
+      <BackButton />
     </div>
   );
 }

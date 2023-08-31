@@ -6,10 +6,10 @@ const NextButton = ({ id }) => {
   console.log(id)
   return (
     <>
-      {id === 9 && <Button
+      {id === 10 && <Button
         variant='contained'
         component={Link}
-        to={`/news?id=${id + 10}`}
+        to={`/news?id=${id}`}
         sx={{
           borderRadius: '50px',
           width: '140px',

@@ -6,7 +6,8 @@ import FadeIn from './FadeIn';
 import NextButton from './AllNews/NextButton';
 import PrevButton from './AllNews/PrevButton';
 
-const NewsContainer = ({ News }) => {
+const NewsContainer = ({ News,Now }) => {
+  console.log(News)
   return (
     <>
       <FadeIn>
@@ -28,8 +29,8 @@ const NewsContainer = ({ News }) => {
         </Grid>
       </Container>
       <Grid container justifyContent="center" style={{ marginTop: '50px', marginBottom: '20px' }}>
-        <PrevButton id={News[0]?.length} />
-        <NextButton id={News[News.length - 1]?.id} />
+        <PrevButton now={Now} id={News?.length} />
+        <NextButton id={News?.length} />
       </Grid>
     </>
   );

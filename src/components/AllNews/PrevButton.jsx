@@ -2,13 +2,13 @@ import React from 'react';
 import { Button } from '@mui/material';
 import { Link } from 'react-router-dom';
 
-const PrevButton = ({ id }) => {
+const PrevButton = ({ id, now }) => {
   return (
     <>
-      {!(id <= 10) && <Button
+      {id < 10 && <Button
         variant='contained'
         component={Link}
-        to={`?id=${id - 10}`}
+        to={`?id=${now - 10}`}
         sx={{
           borderRadius: '50px',
           width: '140px',
